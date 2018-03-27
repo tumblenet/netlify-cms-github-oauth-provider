@@ -79,7 +79,7 @@ app.get('/success', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-  res.send('Hello<br><a href="/auth">Log in with Github</a>')
+  res.send('Hello<br><a href="' + app.mountpath + '/auth">Log in with Github</a>')
 })
 
 // app.listen(port, () => {
