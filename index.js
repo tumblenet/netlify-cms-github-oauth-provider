@@ -82,6 +82,8 @@ app.get('/', (req, res) => {
   res.send('Hello<br><a href="/auth">Log in with Github</a>')
 })
 
-app.listen(port, () => {
-  console.log("gandalf is walkin' on port " + port)
-})
+// app.listen(port, () => {
+//   console.log("gandalf is walkin' on port " + port)
+// }
+
+module.exports = app;
