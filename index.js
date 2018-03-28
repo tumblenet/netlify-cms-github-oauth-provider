@@ -38,7 +38,7 @@ app.get('/callback', (req, res) => {
   }
 
   oauth2.authorizationCode.getToken(options, (error, result) => {
-    let mess, content
+    let mess, content;
 
     if (error) {
       console.error('Access Token Error', error.message)
